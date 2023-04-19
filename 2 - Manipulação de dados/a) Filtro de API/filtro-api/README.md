@@ -1,3 +1,32 @@
+<h1 align="center">Filtro de API de Produtos de Beleza</h1>
+Este é um programa que consome uma API de produtos de beleza e permite filtrar por categoria.
+
+<h2>Como funciona o filtro?</h2>
+Na caixa "Filter by category" é possível adicionar as seguintes categorias:
+
+<br>~ all
+<br>~ bronzer
+<br>~ blush
+<br>~ lip_liner
+<br>~ foundation
+<br>~ eyeshadow
+<br>~ eyeliner
+<br>~ nail_polish
+<br>~ lipstick
+<br>~ mascara
+<br>
+<br>
+Após adicionar a categoria desejada, basta pressionar o botão "Filter" para visualizar apenas os produtos da categoria escolhida.
+
+<h2>Como utilizar o programa?</h2>
+<br>Faça o clone do repositório;
+<br>Instale as dependências utilizando o comando "npm install";
+<br>Rode o programa com "npm start";
+<br>Na caixa "Filter by category", adicione a categoria desejada;
+<br>Pressione o botão "Filter";
+<br>Os produtos da categoria escolhida serão exibidos.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
