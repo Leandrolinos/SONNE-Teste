@@ -1,3 +1,14 @@
+<h1 align="center">Formulário React para envio de dados para uma API</h1>
+<p align="justify">Este é um componente React de formulário que permite ao usuário inserir dados e enviá-los para uma API. O formulário possui três campos de entrada: nome, e-mail e texto. Quando o usuário preenche esses campos e clica no botão "Enviar", os dados são enviados para a API.</p>
+<h2 align="center">Como utilizar</h2>
+<p align="justify">Para utilizar este formulário em seu projeto, siga os seguintes passos:</p>
+<br>Clone este repositório em sua máquina local.
+<br>Navegue até a pasta do projeto e execute npm install para instalar as dependências necessárias.
+<br>Abra o arquivo src/components/Formulario.js e ajuste a URL da API de acordo com suas necessidades.
+<br>Rode o comando npm start para iniciar o servidor de desenvolvimento.
+<br>Abra o seu navegador e acesse a URL http://localhost:3000 para visualizar o formulário em funcionamento.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
