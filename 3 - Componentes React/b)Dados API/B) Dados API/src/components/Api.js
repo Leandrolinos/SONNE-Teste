@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-axios.post('/api/form', {
+axios.post('/api/contact', {
     name: this.state.name,
     email: this.state.email,
     message: this.state.message
@@ -11,3 +11,4 @@ axios.post('/api/form', {
     .catch(error => {
         console.log(error);
     });
+

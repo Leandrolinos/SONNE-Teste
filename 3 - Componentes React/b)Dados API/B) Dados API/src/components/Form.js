@@ -1,69 +1,49 @@
-import React from 'react';
+import React, { useState } from "react";
+import axios from "axios";
 
-class Form extends React.Component {
-    constructor(props) {
-        super(props);
+function Form() {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
 
-        this.state = {
-            name: '',
-            email: '',
-            message: ''
-        };
-    }
-
-    handleNameChange = (event) => {
-        this.setState({ name: event.target.value });
-    }
-
-    handleEmailChange = (event) => {
-        this.setState({ email: event.target.value });
-    }
-
-    handleMessageChange = (event) => {
-        this.setState({ message: event.target.value });
-    }
-
-    handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
 
-        const { name, email, message } = this.state;
+        try {
+            const response = await axios.post("/api/forms", {
+                name,
+                email,
+                message,
+            });
 
-        fetch('http://localhost:3000/api', {
-            method: 'POST',
-            body: JSON.stringify({ name, email, message })
-        })
-            .then(response => {
-                if (response.ok) {
-                    console.log('Dados enviados com sucesso!');
-                } else {
-                    console.log('Erro ao enviar dados.');
-                }
-            })
-            .catch(error => console.error(error));
-    }
+            console.log(response.data);
+        } catch (error) {
+            console.log(error);
+        }
+    };
 
-    render() {
-        return (
-            <form onSubmit={this.handleSubmit}>
-                <label>
-                    Name:
-                    <input type="text" value={this.state.name} onChange={this.handleNameChange} />
-                </label>
-                <br />
-                <label>
-                    Email:
-                    <input type="email" value={this.state.email} onChange={this.handleEmailChange} />
-                </label>
-                <br />
-                <label>
-                    Message:
-                    <textarea value={this.state.message} onChange={this.handleMessageChange} />
-                </label>
-                <br />
-                <button type="submit">Submit</button>
-            </form>
-        );
-    }
+    return (
+        <form onSubmit={handleSubmit}>
+            <input
+                type="text"
+                placeholder="Your name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+            />
+            <input
+                type="email"
+                placeholder="Your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+            />
+            <textarea
+                placeholder="Your message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    );
 }
 
 export default Form;
