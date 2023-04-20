@@ -1,3 +1,17 @@
+<h1 style={{textAlign: "center"}}>Botão com Redux</h1>
+
+Este é um projeto simples que usa Redux para controlar o estado de um botão que pode ser ligado ou desligado. O objetivo é mostrar como um componente pode interagir com o estado global da aplicação através do Redux.
+
+<h2>Como executar o projeto</h2>
+<br>Clone o repositório para a sua máquina local.
+<br>Instale as dependências do projeto com o comando npm install.
+<br>Execute o comando npm start para iniciar o servidor local.
+<br>Abra o navegador e acesse http://localhost:3000.
+<h2>Dependências</h2>
+<br>React
+<br>React-Redux
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
