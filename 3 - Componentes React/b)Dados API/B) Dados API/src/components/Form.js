@@ -28,8 +28,7 @@ class Form extends React.Component {
 
         const { name, email, message } = this.state;
 
-        // Aqui você pode enviar os dados para a API usando fetch ou axios
-        fetch('http://localhost:3000/api/form', {
+        fetch('http://localhost:3000/api', {
             method: 'POST',
             body: JSON.stringify({ name, email, message })
         })
