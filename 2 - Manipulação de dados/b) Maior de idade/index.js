@@ -1,3 +1,8 @@
+const list = [
+    { name: "Leandro", age: 33 },
+    { name: "Juliene", age: 28 },
+    { name: "Olivia", age: 8 }
+]
 
 function returnIsAdult(list) {
     const returnIsAdult = list.map((index) => {
@@ -6,6 +11,5 @@ function returnIsAdult(list) {
     });
     return returnIsAdult;
 }
-
 
 console.log(returnIsAdult(list))
