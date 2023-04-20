@@ -1,4 +1,4 @@
-<h1 style={{textAlign: "center"}}>Botão com Redux</h1>
+<h1 align="center">Botão com Redux</h1>
 
 Este é um projeto simples que usa Redux para controlar o estado de um botão que pode ser ligado ou desligado. O objetivo é mostrar como um componente pode interagir com o estado global da aplicação através do Redux.
 
@@ -11,6 +11,9 @@ Este é um projeto simples que usa Redux para controlar o estado de um botão qu
 <br>React
 <br>React-Redux
 
+<br>
+<br>
+<br>
 
 # Getting Started with Create React App
 
