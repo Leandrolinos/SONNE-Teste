@@ -1,3 +1,7 @@
+Peço desculpas, mas não consegui completar todos os exercícios da lista. Infelizmente, faltou apenas um para que eu pudesse concluí-la por completo. Fiz diversas tentativas para executá-lo, mas todos os códigos deram erro e não consegui identificar o problema.
+
+<br>Deixo aqui o código que consegui desenvolver. Vou continuar me esforçando para melhorar minhas habilidades e conseguir concluir todos os próximos desafios que surgirem.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
